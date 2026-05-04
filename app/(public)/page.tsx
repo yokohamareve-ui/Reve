@@ -5,7 +5,7 @@ import CastCard from '@/components/CastCard';
 import NewsCard from '@/components/NewsCard';
 
 export const revalidate = 0;
-
+console.log(process.env.NEXT_PUBLIC_SUPABASE_URL)
 export default async function HomePage() {
   const [shop, todaySchedule, latestNews] = await Promise.all([
     getShop().catch(() => null),
