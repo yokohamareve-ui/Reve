@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useRef, useState } from 'react';
 import { createClient } from '@/lib/supabase';
 
@@ -82,12 +81,11 @@ export default function ImageUpload({
       {/* Preview */}
       {currentUrl && (
         <div className="relative w-32 h-32 rounded-lg overflow-hidden bg-[#1a1a1a] border border-[#2a2a1a]">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={currentUrl}
             alt="preview"
-            fill
-            sizes="128px"
-            className="object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
       )}
