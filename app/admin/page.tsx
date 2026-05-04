@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase';
-
+console.log(process.env.NEXT_PUBLIC_SUPABASE_URL)
 type Counts = {
   casts: number;
   schedules: number;
