@@ -30,6 +30,7 @@ export default async function SystemPage() {
             height={600}
             className="w-full h-auto rounded-lg"
             priority
+            unoptimized
           />
         </div>
       )}
